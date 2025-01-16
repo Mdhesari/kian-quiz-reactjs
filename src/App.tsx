@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useAuthStore } from './store/authStore';
-import { Brain, User, LogOut } from 'lucide-react';
+import { User, LogOut, Rainbow } from 'lucide-react';
 import { Button } from './components/ui/Button';
 import { Hero } from './components/landing/Hero';
 import { Dashboard } from './components/dashboard/Dashboard';
@@ -23,7 +23,7 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
               <Link to="/" className="flex items-center space-x-3">
-                <Brain className="w-8 h-8 text-indigo-600" />
+                <Rainbow className="w-8 h-8 text-indigo-600" />
                 <h1 className="text-2xl font-bold text-gray-900">KianQuiz</h1>
               </Link>
               {isAuthenticated ? (
